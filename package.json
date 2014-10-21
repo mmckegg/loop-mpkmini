@@ -1,0 +1,28 @@
+{
+  "name": "loop-mpkmini",
+  "version": "0.0.0",
+  "description": "loop-grid bindings for Akai MPK Mini controller.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmckegg/loop-mpkmini.git"
+  },
+  "author": "Matt McKegg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmckegg/loop-mpkmini/issues"
+  },
+  "homepage": "https://github.com/mmckegg/loop-mpkmini",
+  "dependencies": {
+    "array-grid": "^1.4.0",
+    "ditty-grid-stream": "^1.0.0",
+    "loop-grid": "^3.0.0",
+    "midi-port-holder": "^1.0.0",
+    "observ": "^0.2.0",
+    "observ-grid": "^2.8.0",
+    "observ-midi": "^1.4.1"
+  }
+}
