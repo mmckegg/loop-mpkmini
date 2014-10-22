@@ -14,7 +14,7 @@ var mapGridValue = require('observ-grid/map-values')
 var computed = require('observ/computed')
 var watch = require('observ/watch')
 
-var Repeater = require('./lib/repeater.js')
+var Repeater = require('loop-grid-repeater')
 var repeatStates = [2, 1, 1/2, 1/4, 1/8, 2/3, 1/3, 1/6]
 
 module.exports = function MpkController(opts){
