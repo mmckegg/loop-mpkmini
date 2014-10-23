@@ -40,7 +40,8 @@ module.exports = function MpkController(opts){
   var keys = ObservMidi(duplexPort, mapping, output)
   var inputGrabber = ObservGridGrabber(keys)
 
-  DittyGridStream(inputGrabber, self.grid, opts.scheduler).pipe(opts.triggerOutput)
+  var output = DittyGridStream(inputGrabber, self.grid, opts.scheduler)
+  output.pipe(opts.triggerOutput)
 
   // Program Change for loop controls
   duplexPort.on('data', function(data){
@@ -71,6 +72,12 @@ module.exports = function MpkController(opts){
       lastRepeatIndex = index
     }
   })
+
+  // cleanup / disconnect from midi on destroy
+  self._releases.push(
+    portHolder.destroy,
+    output.destroy
+  )
 
   return self
 }

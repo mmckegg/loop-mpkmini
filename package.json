@@ -18,7 +18,7 @@
   "homepage": "https://github.com/mmckegg/loop-mpkmini",
   "dependencies": {
     "array-grid": "^1.4.0",
-    "ditty-grid-stream": "^1.0.0",
+    "ditty-grid-stream": "^1.1.0",
     "loop-grid": "^3.0.0",
     "loop-grid-repeater": "^1.0.0",
     "midi-port-holder": "^1.0.0",
