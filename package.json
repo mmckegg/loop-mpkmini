@@ -21,7 +21,7 @@
     "ditty-grid-stream": "^1.1.0",
     "loop-grid": "^3.0.0",
     "loop-grid-repeater": "^1.0.0",
-    "midi-port-holder": "^1.0.0",
+    "midi-port-holder": "^2.0.0",
     "observ": "^0.2.0",
     "observ-grid": "^2.8.0",
     "observ-midi": "^1.4.1"

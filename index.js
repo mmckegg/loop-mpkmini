@@ -34,6 +34,11 @@ module.exports = function MpkController(opts){
     port: portHolder
   })
 
+  // grab the midi for the current port
+  self.grabInput = function(){
+    portHolder.grab()
+  }
+
   self.portChoices = computedPortNames()
 
   var output = mapGridValue(self.playing, 127)
